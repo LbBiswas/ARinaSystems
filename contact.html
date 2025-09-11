@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Arina Systems</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Arina Systems Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section id="contact" class="page">
+  <div class="contact-hero-bg">
+    <h1 class="contact-title">Get In Touch</h1>
+    <p class="contact-subtitle">Ready to start your next project? We'd love to hear from you. Contact us today to discuss how we can bring your vision to life.</p>
+  </div>
+  <div class="contact-main-flex">
+    <!-- Contact Form -->
+    <div class="contact-form-card animated-fadein-up">
+      <h2>Send Us a Message</h2>
+  <form action="https://formspree.io/f/xpwjbbbd" method="POST">
+        <label>Full Name *</label>
+        <input type="text" name="name" placeholder="Enter your full name" required>
+        <label>Email Address *</label>
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <label>Phone Number</label>
+        <input type="tel" name="phone" placeholder="Enter your phone number">
+        <label>Message *</label>
+        <textarea name="message" placeholder="Write your message..." required></textarea>
+        <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <button type="submit" class="contact-btn-animated">
+          <span>Send Message</span>
+          <svg class="send-icon" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M2 11H20M20 11L14 5M20 11L14 17" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+    </div>
+    <!-- Contact Info -->
+    <div class="contact-info-card animated-fadein-up" style="animation-delay:0.15s;">
+      <h2>Contact Information</h2>
+      <p>We're here to help bring your ideas to life. Reach out to us through any of the following channels, and we'll get back to you as soon as possible.</p>
+      <div class="contact-info-item">
+        <span class="contact-info-icon"><svg width="24" height="24" fill="none"><circle cx="12" cy="12" r="11" stroke="#0d8ae6" stroke-width="2"/><path d="M7 12l3 3 7-7" stroke="#0d8ae6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <strong>Email Address</strong><br>
+          animeshkumar744@gmail.com
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <span class="contact-info-icon"><svg width="24" height="24" fill="none"><circle cx="12" cy="12" r="11" stroke="#0d8ae6" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#0d8ae6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <strong>Phone Number</strong><br>
+          +91 7417315597
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<footer style="background:#131824; color:#e0e6ef; padding:40px 0 0 0; margin-top:40px; font-family:inherit;">
+  <div style="max-width:1200px; margin:auto; display:flex; flex-wrap:wrap; justify-content:space-between; gap:40px; padding:0 30px 30px 30px;">
+    <div style="flex:1; min-width:260px;">
+      <div style="display:flex;align-items:center;gap:10px; margin-bottom:10px;">
+       <img src="images/Shortlogo.png" alt="Arina Systems Logo">
+        <span style="font-size:22px; font-weight:bold; color:#e0e6ef;">Arina Systems</span>
+      </div>
+      <div style="margin-bottom:18px; color:#b0b8c9;">Innovating digital solutions with cutting-edge technology. We transform ideas into powerful software that drives business success.</div>
+      <div style="color:#b0b8c9; font-size:15px; display:flex; align-items:center; gap:18px; flex-wrap:wrap;">
+        <span style="display:flex;align-items:center;gap:5px;white-space:nowrap;"><span style="font-size:16px;">&#9993;</span> animeshkumar744@gmail.com</span>
+        <span style="display:flex;align-items:center;gap:5px;white-space:nowrap;"><span style="font-size:16px;">&#128222;</span> +91 (741) 731-5597</span>
+      </div>
+    </div>
+    <div style="flex:1; min-width:180px;">
+      <div style="font-weight:bold; margin-bottom:12px; color:#fff;">Services</div>
+      <div style="color:#b0b8c9; line-height:1.8;">
+        Web Development<br>Mobile Apps<br>PC Applications<br>Game Development<br>Custom Software
+      </div>
+    </div>
+    <div style="flex:1; min-width:180px;">
+      <div style="font-weight:bold; margin-bottom:12px; color:#fff;">Company</div>
+      <div style="color:#b0b8c9; line-height:1.8;">
+        About Us<br>Our Team<br>Careers<br>Privacy Policy
+      </div>
+    </div>
+  </div>
+  <hr style="border:0; border-top:1px solid #232b39; margin:30px 0 0 0;">
+  <div style="text-align:center; color:#b0b8c9; font-size:16px; padding:18px 0 10px 0;">© 2025 Arina Tech. All rights reserved.</div>
+</footer>
+<script>
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+      header.style.background = '#242323';
+    } else {
+      header.style.background = '#9b9999';
+    }
+  });
+</script>
+</body>
+</html>

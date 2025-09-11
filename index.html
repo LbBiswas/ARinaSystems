@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Company</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Arina Systems Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero animated-bg" style="min-height:420px; display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;">
+    <video autoplay loop muted playsinline class="hero-bg-video" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+      <source src="images/Background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div style="max-width:700px; margin:auto; text-align:center; padding:90px 0 60px 0; position:relative; z-index:1;">
+      <h1 style="font-size:48px; font-weight:700; color:#fff; margin-bottom:10px;">
+        Innovating Digital <span style="color:#b3d1ff;">Solutions</span>
+      </h1>
+      <p style="color:#e0e6ef; font-size:19px; margin-bottom:32px;">We build exceptional websites, mobile apps, computer applications, games, and custom software solutions with our team of skilled developers.</p>
+      <div style="display:flex;gap:16px;justify-content:center;">
+        <a href="#services" class="btn" style="background:#2563eb;box-shadow:0 2px 8px rgba(37,99,235,0.08);border:1px solid #2563eb;">Explore Our Services &rarr;</a>
+        <a href="contact.html" class="btn" style="background:#fff;color:#2563eb;border:1px solid #2563eb;">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Build -->
+  <section id="services" class="reveal" style="background:#442c2c; padding:60px 0 40px 0;">
+    <div class="services-section">
+      <div class="services-title">What we offer</div>
+      <div class="services-subtitle">Our services include</div>
+      <div class="services-grid">
+        <div class="service-flip-card">
+          <div class="service-flip-inner">
+            <div class="service-flip-front">
+              <object data="images/software-dev.svg" type="image/svg+xml" class="service-svg" aria-label="Software Development"></object>
+              <div class="service-title">Software Development</div>
+              <div class="service-desc">Larger than Programming &amp; Coding!</div>
+            </div>
+            <div class="service-flip-back">
+              <div class="service-title">Software Development</div>
+              <div class="service-detail">We build robust, scalable, and secure software tailored to your business needs, using the latest technologies and best practices.</div>
+            </div>
+          </div>
+        </div>
+        <div class="service-flip-card">
+          <div class="service-flip-inner">
+            <div class="service-flip-front">
+              <object data="images/website-dev.svg" type="image/svg+xml" class="service-svg" aria-label="Website Development"></object>
+              <div class="service-title">Website Development</div>
+              <div class="service-desc">Not Just a URL!</div>
+            </div>
+            <div class="service-flip-back">
+              <div class="service-title">Website Development</div>
+              <div class="service-detail">We create modern, responsive, and high-performing websites that engage your audience and drive results.</div>
+            </div>
+          </div>
+        </div>
+        <div class="service-flip-card">
+          <div class="service-flip-inner">
+            <div class="service-flip-front">
+              <object data="images/qa.svg" type="image/svg+xml" class="service-svg" aria-label="Manual and Automation QA"></object>
+              <div class="service-title">Manual and Automation QA</div>
+              <div class="service-desc">Beyond Testing, Redefining Software Confidence!</div>
+            </div>
+            <div class="service-flip-back">
+              <div class="service-title">Manual and Automation QA</div>
+              <div class="service-detail">Our QA experts ensure your software is bug-free, reliable, and ready for the real world with both manual and automated testing.</div>
+            </div>
+          </div>
+        </div>
+        <div class="service-flip-card">
+          <div class="service-flip-inner">
+            <div class="service-flip-front">
+              <object data="images/kick-starter.svg" type="image/svg+xml" class="service-svg" aria-label="Kick Starter Studio"></object>
+              <div class="service-title">Kick Starter Studio</div>
+              <div class="service-desc">Your Tech Partner</div>
+            </div>
+            <div class="service-flip-back">
+              <div class="service-title">Kick Starter Studio</div>
+              <div class="service-detail">From idea to launch, we help startups and businesses bring their tech vision to life with expert guidance and support.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Expert Team -->
+  <section class="reveal" style="background:#fff; padding:60px 0 40px 0;">
+    <div style="max-width:900px; margin:auto; text-align:center;">
+      <h2 style="font-size:32px; font-weight:700; color:#222; margin-bottom:10px;">Our Expert Team</h2>
+      <p style="color:#444; font-size:17px; margin-bottom:40px;">We have a team of experienced and skilled developers specializing in different technologies. Our commitment to excellence ensures client satisfaction and project success.</p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:40px 0;">
+        <div style="flex:1;min-width:120px;text-align:center;">
+          <div style="background:#e9f2ff;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin:auto 0 10px auto;font-size:26px;">👨‍💻</div>
+          <div style="font-weight:700;font-size:22px;">25+</div>
+          <div style="color:#666;font-size:15px;">Expert Developers</div>
+        </div>
+        <div style="flex:1;min-width:120px;text-align:center;">
+          <div style="background:#e9f2ff;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin:auto 0 10px auto;font-size:26px;">🏅</div>
+          <div style="font-weight:700;font-size:22px;">200+</div>
+          <div style="color:#666;font-size:15px;">Projects Completed</div>
+        </div>
+        <div style="flex:1;min-width:120px;text-align:center;">
+          <div style="background:#e9f2ff;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin:auto 0 10px auto;font-size:26px;">💙</div>
+          <div style="font-weight:700;font-size:22px;">150+</div>
+          <div style="color:#666;font-size:15px;">Happy Clients</div>
+        </div>
+        <div style="flex:1;min-width:120px;text-align:center;">
+          <div style="background:#e9f2ff;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin:auto 0 10px auto;font-size:26px;">⚡</div>
+          <div style="font-weight:700;font-size:22px;">8+</div>
+          <div style="color:#666;font-size:15px;">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Trust & Satisfaction -->
+  <section class="reveal" style="background:#fff; padding:0 0 60px 0;">
+    <div style="max-width:1100px; margin:30px auto 0 auto;">
+      <div style="background:#fff; border-radius:14px; box-shadow:0 2px 16px rgba(0,0,0,0.07); padding:32px 18px; text-align:center;">
+        <div style="font-weight:700; font-size:20px; margin-bottom:10px;">Client Trust & Satisfaction</div>
+        <div style="color:#444; font-size:15px; margin-bottom:18px;">Our success is measured by our clients' success. We build long-term partnerships by delivering exceptional software solutions that exceed expectations and drive business growth.</div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:30px 0;">
+          <div style="flex:1;min-width:180px;">
+            <div style="font-weight:600;">Quality Assurance</div>
+            <div style="color:#666;font-size:14px;">Rigorous testing and code review processes</div>
+          </div>
+          <div style="flex:1;min-width:180px;">
+            <div style="font-weight:600;">Timely Delivery</div>
+            <div style="color:#666;font-size:14px;">On-time project completion with regular updates</div>
+          </div>
+          <div style="flex:1;min-width:180px;">
+            <div style="font-weight:600;">Ongoing Support</div>
+            <div style="color:#666;font-size:14px;">Continuous maintenance and technical support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ready to Start Project -->
+  <section class="reveal" style="background:#484d58; color:#fff; padding:60px 0 40px 0; text-align:center;">
+    <div style="max-width:700px; margin:auto;">
+      <h2 style="font-size:30px; font-weight:700; margin-bottom:10px;">Ready to Start Your Project?</h2>
+      <p style="font-size:17px; margin-bottom:32px;">Let's discuss how we can bring your vision to life with our expertise and innovation.</p>
+      <a href="contact.html" class="btn" style="background:#fff;color:#2563eb;border:1px solid #fff;">Start Your Project &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background:#131824; color:#e0e6ef; padding:40px 0 0 0; margin-top:40px; font-family:inherit;">
+    <div style="max-width:1200px; margin:auto; display:flex; flex-wrap:wrap; justify-content:space-between; gap:60px; padding:0 30px 30px 30px;">
+      <div style="flex:1; min-width:260px; text-align:left; padding-right:30px;">
+        <div style="display:flex;align-items:center;gap:10px; margin-bottom:10px;">
+         <img src="images/Shortlogo.png" alt="Arina Systems Logo">
+          <span style="font-size:22px; font-weight:bold; color:#e0e6ef;">Arina Systems</span>
+        </div>
+        <div style="margin-bottom:18px; color:#b0b8c9;">Innovating digital solutions with cutting-edge technology. We transform ideas into powerful software that drives business success.</div>
+        <div style="color:#b0b8c9; font-size:15px; display:flex; align-items:center; gap:18px; flex-wrap:wrap;">
+          <span style="display:flex;align-items:center;gap:5px;white-space:nowrap;"><span style="font-size:16px;">&#9993;</span> animeshkumar744@gmail.com</span>
+          <span style="display:flex;align-items:center;gap:5px;white-space:nowrap;"><span style="font-size:16px;">&#128222;</span> +91 (741) 731-5597</span>
+        </div>
+      </div>
+      <div style="flex:1; min-width:180px; text-align:left; padding-right:30px;">
+        <div style="font-weight:bold; margin-bottom:12px; color:#fff;">Services</div>
+        <div style="color:#b0b8c9; line-height:2.2;">
+          Web Development<br>Mobile Apps<br>PC Applications<br>Game Development<br>Custom Software
+        </div>
+      </div>
+      <div style="flex:1; min-width:180px; text-align:left;">
+        <div style="font-weight:bold; margin-bottom:12px; color:#fff;">Company</div>
+        <div style="color:#b0b8c9; line-height:2.2;">
+          About Us<br>Our Team<br>Careers<br>Privacy Policy
+        </div>
+      </div>
+    </div>
+    <hr style="border:0; border-top:1px solid #232b39; margin:30px 0 0 0;">
+  <div style="text-align:center; color:#b0b8c9; font-size:16px; padding:18px 0 10px 0;">© 2025 Arina Systems. All rights reserved.</div>
+  </footer>
+<script>
+  // Header color scroll effect
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+      header.style.background = '#242323';
+    } else {
+      header.style.background = '#9b9999';
+    }
+  });
+
+  // Fade-in on scroll animation for sections
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const elementVisible = 80;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('DOMContentLoaded', revealOnScroll);
+</script>
+</body>
+</html>
