@@ -1,3 +1,91 @@
+/* --- Extra Responsive Tweaks for Why Us & Schedule Call Pages --- */
+@media (max-width: 600px) {
+  .whyus-hero, .schedule-call-hero-bg {
+    padding: 32px 4vw 16px 4vw;
+  }
+  .whyus-title, .schedule-call-title {
+    font-size: 1.5rem;
+  }
+  .whyus-section-title, .whyus-support-title {
+    font-size: 1.2rem;
+    margin: 18px 0 12px 0;
+  }
+  .whyus-working-cards {
+    gap: 10px;
+    padding: 0 2vw;
+  }
+  .whyus-working-card, .whyus-working-card-split {
+    padding: 14px 4vw 12px 4vw;
+    min-width: 0;
+    min-height: 0;
+    font-size: 0.98rem;
+  }
+  .whyus-benefit-row, .whyus-benefit-row-card {
+    padding: 10px 4vw 10px 4vw;
+    border-radius: 10px;
+  }
+  .whyus-benefit-iconwrap {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+  }
+  .whyus-benefit-iconwrap img {
+    width: 24px;
+    height: 24px;
+  }
+  .whyus-benefit-row-title {
+    font-size: 0.98rem;
+  }
+  .whyus-support-cards-gradient {
+    gap: 10px;
+  }
+  .whyus-support-card-gradient {
+    padding: 0 2vw;
+  }
+  .whyus-curious-cta-container {
+    padding: 10px 2vw 10px 2vw;
+    gap: 8px;
+  }
+  .whyus-curious-cta-title {
+    font-size: 1rem;
+  }
+  .whyus-footer-main {
+    gap: 8px;
+    padding: 12px 2vw 8px 2vw;
+  }
+  .whyus-footer-col {
+    margin-bottom: 8px;
+  }
+  .whyus-footer-logo {
+    width: 60px;
+  }
+  .whyus-footer-bottom {
+    font-size: 0.85rem;
+    padding: 8px 2vw 6px 2vw;
+  }
+  .schedule-call-main-flex {
+    padding: 4px 2vw 4px 2vw;
+    gap: 8px;
+  }
+  .schedule-call-form-group input,
+  .schedule-call-form-group select,
+  .schedule-call-form-group textarea {
+    font-size: 0.98rem;
+    padding: 8px 8px;
+  }
+  .schedule-call-contact-card {
+    padding: 10px 8px;
+    font-size: 0.98rem;
+  }
+  .schedule-call-contact-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  .contact-btn-animated {
+    font-size: 0.98rem;
+    padding: 10px 0;
+    width: 100%;
+  }
 /* --- Why WSE Section Flex Layout --- */
 .whyus-whywse-flex {
   display: flex;
@@ -7,7 +95,6 @@
   max-width: 1200px;
   margin: 0 auto 32px auto;
   flex-wrap: wrap;
-}
 .whyus-whywse-media {
   flex: 1 1 420px;
   min-width: 320px;
@@ -606,10 +693,6 @@
   position: relative;
   border: 1.5px solid #e3eaff;
 }
-    padding: 40px 24px 32px 24px;
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(37,99,235,0.13);
-  border-color: #b3d1ff;
 }
 .service-icon {
   background: linear-gradient(135deg, #b3d1ff 0%, #2563eb 100%);
