@@ -1,6 +1,83 @@
+/* --- Why WSE Section Flex Layout --- */
+.whyus-whywse-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto 32px auto;
+  flex-wrap: wrap;
+}
+.whyus-whywse-media {
+  flex: 1 1 420px;
+  min-width: 320px;
+  max-width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whyus-whywse-content {
+  flex: 1 1 340px;
+  min-width: 280px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+}
+.whyus-benefit-row-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(37,99,235,0.08);
+  padding: 22px 28px 22px 18px;
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(90deg, #00b16a 0%, #1ccfcf 100%) 1;
+  transition: box-shadow 0.3s, transform 0.3s;
+  margin-bottom: 0;
+}
+.whyus-benefit-row-card:hover {
+  box-shadow: 0 8px 32px rgba(0,180,130,0.13);
+  transform: translateY(-2px) scale(1.03);
+}
+.whyus-benefit-row-card .whyus-benefit-iconwrap {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 18px;
+  flex-shrink: 0;
+}
+.whyus-benefit-row-card .whyus-benefit-iconwrap img {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+.whyus-benefit-row-card .whyus-benefit-row-title {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #222;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+@media (max-width: 900px) {
+  .whyus-whywse-flex {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 4vw;
+  }
+  .whyus-whywse-media, .whyus-whywse-content {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
 /* --- Modern Contact Section --- */
 .contact-hero-bg {
-  background: linear-gradient(135deg, #eaf6fb 0%, #f6fffd 100%);
+  background: linear-gradient(180deg, #b2bd94 60%, #caca9c 100%);
   padding: 60px 20px 30px 20px;
   text-align: center;
 }
@@ -232,7 +309,7 @@
   display: block;
 }
 .expertise-tech-item:hover {
-  background: linear-gradient(135deg, #c9e47f 60%, #505b8d 100%);
+  background: linear-gradient(180deg, #b2bd94 60%, #caca9c 100%);;
   color: #fff;
 }
 .expertise-modern-img {
@@ -399,7 +476,6 @@
   max-width: 280px;
   min-height: 180px;
   max-width: 600px;
-  max-height: 280px;
 }
 .about-values-row:last-child {
   margin-top: 0;
@@ -1010,4 +1086,829 @@ footer {
   font-size: 18px;
   line-height: 1.6;
   color: #444;
+}
+
+/* --- WHY US PAGE STYLES --- */
+.whyus-hero {
+  background: linear-gradient(180deg, #b2bd94 60%, #caca9c 100%);
+  padding: 60px 20px 30px 20px;
+  text-align: center;
+  position: relative;
+}
+.whyus-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #00b16a;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+.whyus-subtitle {
+  font-size: 1.1rem;
+  color: #888;
+  max-width: 700px;
+  margin: 0 auto 18px auto;
+}
+.whyus-breadcrumbs {
+  color: #888;
+  font-size: 0.98rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.whyus-section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #222;
+  margin: 40px 0 24px 0;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.whyus-whywse-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  max-width: 1100px;
+  margin: 0 auto 32px auto;
+  align-items: flex-start;
+  justify-content: center;
+}
+.whyus-video-card {
+  flex: 1 1 380px;
+  min-width: 320px;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.10);
+  overflow: hidden;
+}
+.whyus-benefits-cards {
+  flex: 1 1 320px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.whyus-benefit-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0,180,130,0.08);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 18px;
+  font-size: 1.08rem;
+  color: #222;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.whyus-benefit-card:hover {
+  box-shadow: 0 8px 32px rgba(0,180,130,0.16);
+  transform: translateY(-2px) scale(1.03);
+}
+.whyus-benefit-icon img {
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+.whyus-benefit-text strong {
+  color: #00b16a;
+  font-weight: 700;
+}
+.whyus-working {
+  background: #fff;
+  padding: 40px 0 30px 0;
+}
+.whyus-working-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  max-width: 1200px;
+  margin: 0 auto 24px auto;
+}
+.whyus-working-card {
+  background: #f8fcff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(37,99,235,0.07);
+  padding: 32px 24px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.whyus-working-card:hover {
+  box-shadow: 0 8px 32px rgba(0,180,130,0.13);
+  transform: translateY(-2px) scale(1.03);
+}
+.whyus-working-icon img {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 6px;
+}
+.whyus-working-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #00b16a;
+}
+.whyus-working-desc {
+  color: #444;
+  font-size: 1.05rem;
+}
+.whyus-cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 24px 0 0 0;
+}
+.whyus-cta-btn {
+  background: linear-gradient(90deg, #00b16a 60%, #1ccfcf 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 32px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+.whyus-cta-btn:hover {
+  background: linear-gradient(90deg, #1ccfcf 0%, #00b16a 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+.whyus-cta-secondary {
+  background: #fff;
+  color: #00b16a;
+  border: 2px solid #00b16a;
+}
+.whyus-cta-secondary:hover {
+  background: #eaf6fb;
+}
+.whyus-support {
+  background: linear-gradient(90deg, #00b16a 0%, #1ccfcf 100%);
+  padding: 60px 0 40px 0;
+  color: #fff;
+  text-align: center;
+}
+.whyus-support-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.whyus-support-card {
+  background: rgba(255,255,255,0.13);
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(37,99,235,0.07);
+  padding: 38px 32px 32px 32px;
+  min-width: 260px;
+  max-width: 360px;
+  flex: 1 1 320px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.whyus-support-icon img {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 8px;
+}
+.whyus-support-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #fff;
+}
+.whyus-support-desc {
+  color: #e0f7f7;
+  font-size: 1.05rem;
+}
+.whyus-curious {
+  background: #fff;
+  padding: 36px 0 0 0;
+}
+.whyus-curious-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f8fcff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(37,99,235,0.07);
+  padding: 32px 24px;
+}
+.whyus-curious-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00b16a;
+}
+.whyus-curious-btn {
+  background: linear-gradient(90deg, #00b16a 60%, #1ccfcf 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 32px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+.whyus-curious-btn:hover {
+  background: linear-gradient(90deg, #1ccfcf 0%, #00b16a 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+@media (max-width: 900px) {
+  .whyus-whywse-content, .whyus-support-cards, .whyus-curious-row {
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 2vw;
+  }
+  .whyus-working-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0 2vw;
+  }
+  .whyus-support-card {
+    min-width: 0;
+    max-width: 100%;
+    padding: 24px 10px 18px 10px;
+  }
+  .whyus-curious-row {
+    padding: 18px 6px;
+  }
+}
+
+/* --- Why Us Working Together Split Card --- */
+.whyus-working-card-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0fcfc;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.10);
+  padding: 54px 48px 48px 48px;
+  margin-bottom: 0;
+  gap: 36px;
+  min-width: 650px;
+  min-height: 250px;
+}
+.whyus-working-card-left {
+  flex: 2;
+  text-align: left;
+}
+.whyus-working-card-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.whyus-working-card-right img {
+  width: 140px;
+  height: auto;
+  max-width: 100%;
+}
+.whyus-working-card-split .whyus-working-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 12px;
+}
+.whyus-working-card-split .whyus-working-desc {
+  color: #222;
+  font-size: 1.08rem;
+}
+@media (max-width: 900px) {
+  .whyus-working-card-split {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 18px;
+    padding: 28px 10px 18px 10px;
+    min-width: 0;
+    min-height: 0;
+  }
+  .whyus-working-card-right img {
+    width: 90px;
+  }
+}
+
+/* --- Why Us Benefits List (Horizontal Cards) --- */
+.whyus-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 650px;
+  margin: 0 auto 32px auto;
+}
+.whyus-benefit-row {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 18px rgba(37,99,235,0.08);
+  padding: 28px 32px 28px 24px;
+  position: relative;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(90deg, #00b16a 0%, #1ccfcf 100%) 1;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.whyus-benefit-row:hover {
+  box-shadow: 0 8px 32px rgba(0,180,130,0.13);
+  transform: translateY(-2px) scale(1.03);
+}
+.whyus-benefit-iconwrap {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 28px;
+  flex-shrink: 0;
+}
+.whyus-benefit-iconwrap img {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+.whyus-benefit-row-text {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.whyus-benefit-row-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #222;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+@media (max-width: 700px) {
+  .whyus-benefits-list {
+    gap: 18px;
+    padding: 0 4vw;
+  }
+  .whyus-benefit-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 10px 18px 10px;
+    border-radius: 14px;
+  }
+  .whyus-benefit-iconwrap {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .whyus-benefit-row-title {
+    font-size: 1.08rem;
+  }
+}
+
+/* --- Additional Support Initiatives Gradient Section --- */
+.whyus-support-gradient {
+  background: linear-gradient(90deg, #0db2e6 0%, #1ccfcf 60%, #3edb8f 100%);
+  padding: 64px 0 48px 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.whyus-support-title {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 38px;
+  letter-spacing: 0.01em;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+.whyus-support-cards-gradient {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.whyus-support-card-gradient {
+  flex: 1 1 380px;
+  min-width: 260px;
+  max-width: 480px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 32px;
+}
+.whyus-support-icon-gradient {
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+.whyus-support-icon-gradient img {
+  width: 100px;
+  height: 100px;
+  filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,0.10));
+  transition: transform 0.25s cubic-bezier(.4,0,.2,1), filter 0.25s cubic-bezier(.4,0,.2,1);
+}
+.whyus-support-card-gradient:hover .whyus-support-icon-gradient img {
+  transform: scale(1.13) rotate(-6deg);
+  filter: brightness(1.2) invert(0) drop-shadow(0 4px 18px #fff) drop-shadow(0 2px 12px #1ccfcf);
+}
+.whyus-support-title-gradient {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fff;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+.whyus-support-desc-gradient {
+  font-size: 1.08rem;
+  color: #eaf6fb;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+.whyus-support-divider {
+  width: 2px;
+  background: rgba(255,255,255,0.35);
+  height: 120px;
+  align-self: center;
+  margin: 0 32px;
+  border-radius: 2px;
+}
+@media (max-width: 900px) {
+  .whyus-support-cards-gradient {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .whyus-support-divider {
+    display: none;
+  }
+  .whyus-support-card-gradient {
+    padding: 0 10vw;
+    max-width: 100%;
+  }
+}
+
+/* --- Modern Footer Section (Area4) --- */
+.whyus-footer {
+  background: #232e34;
+  color: #eaf6fb;
+  padding: 0;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+.whyus-footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 48px 4vw 24px 4vw;
+}
+.whyus-footer-col {
+  flex: 1 1 220px;
+  min-width: 200px;
+  max-width: 340px;
+  margin-bottom: 24px;
+}
+.whyus-footer-brand {
+  max-width: 320px;
+}
+.whyus-footer-logo {
+  width: 90px;
+  margin-bottom: 12px;
+}
+.whyus-footer-brand-text {
+  font-size: 1.01rem;
+  color: #b3c6d1;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+.whyus-footer-socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+.whyus-footer-socials a img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s;
+}
+.whyus-footer-socials a:hover img {
+  transform: scale(1.13) rotate(-8deg);
+}
+.whyus-footer-col-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 14px;
+  letter-spacing: 0.01em;
+}
+.whyus-footer-links ul,
+.whyus-footer-services ul,
+.whyus-footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.whyus-footer-links ul li,
+.whyus-footer-services ul li,
+.whyus-footer-contact ul li {
+  margin-bottom: 8px;
+  font-size: 0.98rem;
+  color: #eaf6fb;
+}
+.whyus-footer-links ul li a {
+  color: #eaf6fb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.whyus-footer-links ul li a:hover {
+  color: #1ccfcf;
+}
+.whyus-footer-contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: left;
+}
+.whyus-footer-contact-icon img {
+  width: 16px;
+  height: 16px;
+}
+.whyus-footer-bottom {
+  background: linear-gradient(90deg, #1ccfcf 0%, #3edb8f 100%);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 4vw 10px 4vw;
+  font-size: 0.98rem;
+}
+.whyus-footer-policy-links a {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 12px;
+  margin-right: 0;
+  font-size: 0.98rem;
+}
+.whyus-footer-policy-links a:hover {
+  color: #232e34;
+}
+@media (max-width: 900px) {
+  .whyus-footer-main {
+    flex-direction: column;
+    gap: 18px;
+    padding: 32px 4vw 16px 4vw;
+  }
+  .whyus-footer-col {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .whyus-footer-bottom {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
+
+/* --- Curious CTA Section (Why Us) --- */
+.whyus-curious-cta {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 32px 0;
+  position: relative;
+  z-index: 2;
+}
+.whyus-curious-cta-container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 32px rgba(37,99,235,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+  margin: -60px auto 0 auto;
+  padding: 36px 38px 28px 38px;
+  gap: 32px;
+}
+.whyus-curious-cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #13b77a;
+  flex: 1;
+  text-align: left;
+}
+.whyus-curious-cta-btn {
+  background: #13b77a;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 22px;
+  padding: 12px 36px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  transition: background 0.2s, transform 0.2s;
+  display: inline-block;
+}
+.whyus-curious-cta-btn:hover {
+  background: #0d8ae6;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+@media (max-width: 700px) {
+  .whyus-curious-cta-container {
+    flex-direction: column;
+    gap: 18px;
+    padding: 22px 10px 18px 10px;
+    text-align: center;
+  }
+  .whyus-curious-cta-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+/* --- Schedule a Call Page Styles --- */
+.schedule-call-hero-bg {
+  background: linear-gradient(180deg, #b2bd94 60%, #caca9c 100%);
+  padding: 48px 0 18px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.schedule-call-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.schedule-call-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #13b77a;
+  margin-bottom: 8px;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+.schedule-call-subtitle {
+  font-size: 1.18rem;
+  color: #444;
+  margin-bottom: 12px;
+}
+.schedule-call-breadcrumbs {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.schedule-call-main {
+  background: none;
+  padding: 0 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.schedule-call-main-flex {
+  display: flex;
+  gap: 32px;
+  max-width: 1100px;
+  margin: -60px auto 0 auto;
+  background: #f6fffd;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.10);
+  padding: 38px 32px 32px 32px;
+  width: 100%;
+  align-items: flex-start;
+}
+.schedule-call-form-modern {
+  flex: 2 1 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.schedule-call-form-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.schedule-call-form-group {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.schedule-call-form-group label {
+  font-weight: 600;
+  color: #13b77a;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+.schedule-call-form-group input,
+.schedule-call-form-group select,
+.schedule-call-form-group textarea {
+  padding: 10px 12px;
+  border: 1.5px solid #b2e6d4;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.2s;
+  font-family: inherit;
+}
+.schedule-call-form-group input:focus,
+.schedule-call-form-group select:focus,
+.schedule-call-form-group textarea:focus {
+  border: 1.5px solid #13b77a;
+  outline: none;
+}
+.schedule-call-form-group textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+.schedule-call-phone-flex {
+  display: flex;
+  gap: 8px;
+}
+.schedule-call-location-flex {
+  display: flex;
+  gap: 8px;
+}
+.schedule-call-contact-info {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 0;
+}
+.schedule-call-contact-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(37,99,235,0.10);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 22px;
+  font-size: 1.08rem;
+  color: #222;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(90deg, #00b16a 0%, #1ccfcf 100%) 1;
+}
+.schedule-call-contact-icon img {
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+.schedule-call-contact-text {
+  font-size: 1.08rem;
+  color: #222;
+  font-weight: 500;
+}
+@media (max-width: 1100px) {
+  .schedule-call-main-flex {
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 8px 18px 8px;
+  }
+  .schedule-call-contact-info {
+    margin-top: 0;
+  }
+}
+@media (max-width: 700px) {
+  .schedule-call-hero-content {
+    padding: 0 4vw;
+  }
+  .schedule-call-main-flex {
+    flex-direction: column;
+    gap: 18px;
+    padding: 12px 2vw 8px 2vw;
+  }
+  .schedule-call-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
 }

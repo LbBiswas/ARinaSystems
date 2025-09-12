@@ -1,0 +1,29 @@
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Arina Systems Logo">
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="why-us.html">Why Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+      header.style.background = '#242323';
+    } else {
+      header.style.background = '#b2b5b9';
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule a Call - WSE Infratech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="WSE Infratech Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="why-us.html">Why Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="schedule-call-hero-bg">
+    <div class="schedule-call-hero-content">
+      <h1 class="schedule-call-title"><span style="color:#13b77a;font-weight:800;">Book a Free Consultation</span></h1>
+      <p class="schedule-call-subtitle">Talk to our experts to find the right solution for you</p>
+      <div class="schedule-call-breadcrumbs">
+        <span style="display:inline-flex;vertical-align:middle;align-items:center;justify-content:center;width:18px;height:18px;">
+          <svg viewBox="0 0 20 20" fill="none" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M2 10L10 3L18 10" stroke="#00b16a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 10V17H8V13H12V17H16V10" stroke="#00b16a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span> &rsaquo; Book a Free Consultation
+      </div>
+    </div>
+  </section>
+  <section class="schedule-call-main">
+    <div class="schedule-call-main-flex">
+      <form class="schedule-call-form-modern" action="https://formspree.io/f/xpwjbbbd" method="POST">
+        <div class="schedule-call-form-row">
+          <div class="schedule-call-form-group">
+            <label>First Name *</label>
+            <input type="text" name="first_name" required placeholder="Enter First Name">
+          </div>
+          <div class="schedule-call-form-group">
+            <label>Last Name *</label>
+            <input type="text" name="last_name" required placeholder="Enter Last Name">
+          </div>
+        </div>
+        <div class="schedule-call-form-row">
+          <div class="schedule-call-form-group">
+            <label>Phone Number *</label>
+            <div class="schedule-call-phone-flex">
+              <select name="country_code" required style="min-width:70px;">
+                <option value="">Code</option>
+                <option value="91">+91</option>
+                <option value="1">+1</option>
+                <option value="44">+44</option>
+                <option value="61">+61</option>
+                <!-- Add more as needed -->
+              </select>
+              <input type="tel" name="phone" required placeholder="Enter Phone Number" style="flex:1;">
+            </div>
+          </div>
+          <div class="schedule-call-form-group">
+            <label>Email Address *</label>
+            <input type="email" name="email" required placeholder="Enter Email Address">
+          </div>
+        </div>
+        <div class="schedule-call-form-row">
+          <div class="schedule-call-form-group">
+            <label>Company Name</label>
+            <input type="text" name="company" placeholder="Enter Company Name">
+          </div>
+          <div class="schedule-call-form-group">
+            <label>Website</label>
+            <input type="text" name="website" placeholder="Enter Website Url">
+          </div>
+        </div>
+        <div class="schedule-call-form-row">
+          <div class="schedule-call-form-group">
+            <label>Location</label>
+            <div class="schedule-call-location-flex">
+              <select name="country">
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <!-- Add more as needed -->
+              </select>
+              <select name="state">
+                <option value="">Select State</option>
+              </select>
+              <select name="city">
+                <option value="">Select City</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-call-form-row">
+          <div class="schedule-call-form-group" style="width:100%;">
+            <label>Message</label>
+            <textarea name="message" placeholder="Let us know what you'd like to discuss..."></textarea>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:18px;">
+          <button type="submit" class="contact-btn-animated" style="width:160px;">Submit</button>
+        </div>
+      </form>
+      <div class="schedule-call-contact-info">
+        <div class="schedule-call-contact-card">
+          <div class="schedule-call-contact-icon"><img src="images/phone-icon.png" alt="Phone"></div>
+          <div class="schedule-call-contact-text">+91-907375 4444</div>
+        </div>
+        <div class="schedule-call-contact-card">
+          <div class="schedule-call-contact-icon"><img src="images/mail-icon.png" alt="Email"></div>
+          <div class="schedule-call-contact-text">support@wseinfratech.com</div>
+        </div>
+        <div class="schedule-call-contact-card">
+          <div class="schedule-call-contact-icon"><img src="images/location-icon.png" alt="Location"></div>
+          <div class="schedule-call-contact-text">The Legacy<br>Unit No 35A & 35B 3rd Floor<br>25A Shakespeare Sarani<br>Kolkata - 700017</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="whyus-footer">
+    <div class="whyus-footer-main">
+      <!-- ...footer content as in other pages... -->
+    </div>
+    <div class="whyus-footer-bottom">
+      <div class="whyus-footer-policy-links">
+        <a href="#">Terms of Service</a> | <a href="#">Privacy policy</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+  // Header color scroll effect
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+      header.style.background = '#242323';
+    } else {
+      header.style.background = '#b2b5b9';
+    }
+  });
+
+  // Fade-in on scroll animation for sections
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const elementVisible = 80;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('DOMContentLoaded', revealOnScroll);
+</script>
+</body>
+</html>
