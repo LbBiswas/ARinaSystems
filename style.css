@@ -532,7 +532,7 @@
   filter: drop-shadow(0 2px 8px #fff8);
   stroke: #fff;
 }
-}
+
 @media (max-width: 900px) {
   .about-believe-grid {
     flex-direction: column;
@@ -695,11 +695,8 @@
   position: relative;
   border: 1.5px solid #e3eaff;
 }
-    padding: 40px 24px 32px 24px;
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(37,99,235,0.13);
-  border-color: #b3d1ff;
-}
+
+
 .service-icon {
   background: linear-gradient(135deg, #b3d1ff 0%, #2563eb 100%);
   color: #fff;
