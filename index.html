@@ -279,6 +279,15 @@
   const chatbotWin = document.getElementById('faqChatbotWindow');
   const closeBtn = document.getElementById('closeFaqChatbot');
   openBtn.addEventListener('click', function() {
+    // Reset FAQ state: hide all answers and remove active class
+    document.querySelectorAll('.faq-chatbot-qitem .faq-chatbot-answer').forEach(function(ans) {
+      ans.classList.remove('visible');
+      ans.textContent = '';
+    });
+    document.querySelectorAll('.faq-chatbot-qitem').forEach(function(qitem) {
+      qitem.classList.remove('active');
+    });
+    lastActive = null;
     chatbotWin.style.display = 'flex';
     setTimeout(() => chatbotWin.classList.add('open'), 10);
     chatbotWin.focus();
@@ -295,7 +304,7 @@
   const answers = {
     hours: "Our business hours are Monday to Friday, 9:00 AM to 6:00 PM.",
     services: "We offer software development, website development, QA, marketing strategy, and more. See our Services page for details.",
-    contact: "You can contact support via our Contact page or email support@wseinfratech.com.",
+    contact: "You can contact support via our Contact page or email animeshkumar744@gmail.com.",
     location: "Coming soon! We are currently a remote-first company with team members across various locations.",
     custom: "Absolutely! Please use our Contact page to tell us your requirements and we'll get back to you with a custom solution."
   };
