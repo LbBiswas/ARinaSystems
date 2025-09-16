@@ -428,6 +428,58 @@
   }
 }
 @media (max-width: 700px) {
+  nav ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    background: rgba(30,32,44,0.98);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    z-index: 2000;
+    box-shadow: 0 8px 32px rgba(37,99,235,0.13);
+    border-radius: 0 0 18px 18px;
+    padding: 0;
+    max-height: 64px;
+    overflow-y: hidden;
+    transition: max-height 0.35s cubic-bezier(.4,0,.2,1);
+    scrollbar-width: thin;
+  }
+  nav ul.open {
+    max-height: 400px;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 18px 0 18px 0;
+    transition: max-height 0.45s cubic-bezier(.4,0,.2,1);
+  }
+  nav ul li {
+    display: inline-block;
+    min-width: 120px;
+    text-align: center;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+  nav ul li a {
+    color: #fff;
+    font-size: 1.18rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    display: block;
+    width: 100%;
+    transition: color 0.2s;
+  }
+  nav ul li a:hover {
+    color: #1ccfcf;
+  }
+}
   .expertise-modern {
     padding: 48px 0 32px 0;
   }
