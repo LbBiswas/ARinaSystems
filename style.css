@@ -1,3 +1,42 @@
+.about-values-row-scroll {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  margin-top: 32px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100vw;
+}
+.about-values-row-scroll::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 900px) {
+  .about-values-row-scroll {
+    gap: 16px;
+    padding-bottom: 8px;
+  }
+  .about-values-row-scroll .about-value-card {
+    min-width: 200px;
+    max-width: 260px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .about-values-row-scroll {
+    gap: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-values-row-scroll .about-value-card {
+    min-width: 150px;
+    max-width: 200px;
+    font-size: 0.95rem;
+  }
+}
 /* --- Extra Responsive Tweaks for Why Us & Schedule Call Pages --- */
 @media (max-width: 600px) {
   .whyus-hero, .schedule-call-hero-bg {
@@ -501,7 +540,7 @@
     padding: 7px 10px;
     border-radius: 10px;
   }
-}
+
 /* --- About Believe Section (Bottom of About Page) --- */
 .about-believe-section {
   background: #f4fcfc;
@@ -697,7 +736,7 @@
   letter-spacing: 0.01em;
 }
 .about-value-desc {
-  color: #888;
+  color: #504242;
   font-size: 1.0rem;
   text-align: center;
   line-height: 1.6;
