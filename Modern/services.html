@@ -1,0 +1,101 @@
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Arina Systems Logo">
+    </a>
+  </div>
+  
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" id="mobileMenuBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
+  <nav id="mainNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="why-us.html">Why Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  /**
+   * Services Page Interactive Features
+   * Provides header scroll effects and mobile navigation functionality
+   * Lightweight script focused on essential user interface interactions
+   */
+
+  /**
+   * Header Background Color Change on Scroll
+   * Simple header background color transition based on scroll position
+   * Provides visual feedback when user scrolls away from top of page
+   */
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header'); // Get header element reference
+    
+    // Change header background color based on scroll position
+    if (window.scrollY > 0) {
+      header.style.background = '#242323'; // Dark background when scrolled
+    } else {
+      header.style.background = '#b2b5b9'; // Light background at top of page
+    }
+  });
+
+  /**
+   * Mobile Navigation Menu System
+   * Complete mobile menu functionality for responsive navigation
+   * Handles hamburger button interactions and menu state management
+   */
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get references to mobile navigation components
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn'); // Hamburger menu button
+    const mainNav = document.getElementById('mainNav');             // Navigation menu container
+    
+    // Ensure mobile menu elements exist before adding functionality
+    if (mobileMenuBtn && mainNav) {
+      
+      /**
+       * Mobile Menu Toggle Handler
+       * Opens/closes mobile menu when hamburger button is clicked
+       * Toggles visual states for both button animation and menu visibility
+       */
+      mobileMenuBtn.addEventListener('click', function() {
+        mobileMenuBtn.classList.toggle('active'); // Toggle hamburger to X animation
+        mainNav.classList.toggle('active');       // Toggle menu visibility
+      });
+
+      /**
+       * Navigation Link Click Handler
+       * Automatically closes mobile menu when any navigation link is clicked
+       * Improves user experience by hiding menu after user navigates
+       */
+      const navLinks = mainNav.querySelectorAll('a'); // Get all navigation links
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenuBtn.classList.remove('active'); // Reset hamburger button animation
+          mainNav.classList.remove('active');       // Hide navigation menu
+        });
+      });
+
+      /**
+       * Click Outside Handler
+       * Closes mobile menu when user clicks outside the menu area
+       * Follows standard mobile UI patterns for menu dismissal
+       */
+      document.addEventListener('click', function(e) {
+        // Check if click occurred outside both menu button and menu itself
+        if (!mobileMenuBtn.contains(e.target) && !mainNav.contains(e.target)) {
+          mobileMenuBtn.classList.remove('active'); // Reset hamburger animation
+          mainNav.classList.remove('active');       // Hide menu
+        }
+      });
+    }
+  });
+</script>
+</body>
+</html>

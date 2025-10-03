@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Test</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .test-box {
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔧 Debug Test Page</h1>
+    <div class="test-box">
+        <h2>Basic HTML/CSS Test</h2>
+        <p>If you can see this styled page, your server is working!</p>
+    </div>
+    
+    <div class="test-box">
+        <h2>JavaScript Test</h2>
+        <button onclick="testFunction()">Click to Test JavaScript</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        console.log('🧪 Test page loaded successfully!');
+        
+        function testFunction() {
+            document.getElementById('result').innerHTML = '✅ JavaScript is working!';
+            console.log('🎯 Button clicked - JavaScript working');
+        }
+        
+        // Test if modern effects script would load
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('📄 DOM loaded in test page');
+        });
+    </script>
+</body>
+</html>
