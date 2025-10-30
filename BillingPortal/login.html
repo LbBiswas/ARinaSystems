@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Portal - Login</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1><i class="fas fa-file-invoice"></i> Billing Portal</h1>
+                <p>Secure Access to Your Billing Information</p>
+            </div>
+            
+            <div class="login-tabs">
+                <button class="tab-btn active" data-tab="customer">
+                    <i class="fas fa-user"></i> Customer Login
+                </button>
+                <button class="tab-btn" data-tab="admin">
+                    <i class="fas fa-user-shield"></i> Admin Login
+                </button>
+            </div>
+
+            <!-- Customer Login Form -->
+            <form id="customer-form" class="login-form active">
+                <input type="hidden" name="login_type" value="customer">
+                
+                <div class="form-group">
+                    <label for="customer-username">
+                        <i class="fas fa-user"></i> Username
+                    </label>
+                    <input type="text" id="customer-username" name="username" placeholder="Enter your username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-password">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <input type="password" id="customer-password" name="password" placeholder="Enter your password" required>
+                    <span class="password-toggle" onclick="togglePassword('customer-password')">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+                
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Login as Customer
+                </button>
+            </form>
+
+            <!-- Admin Login Form -->
+            <form id="admin-form" class="login-form">
+                <input type="hidden" name="login_type" value="admin">
+                
+                <div class="form-group">
+                    <label for="admin-username">
+                        <i class="fas fa-user-shield"></i> Admin Username
+                    </label>
+                    <input type="text" id="admin-username" name="username" placeholder="Enter your username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="admin-password">
+                        <i class="fas fa-lock"></i> Admin Password
+                    </label>
+                    <input type="password" id="admin-password" name="password" placeholder="Enter your password" required>
+                    <span class="password-toggle" onclick="togglePassword('admin-password')">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+                
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                
+                <button type="submit" class="login-btn admin-btn">
+                    <i class="fas fa-shield-alt"></i> Admin Login
+                </button>
+            </form>
+
+            <div class="login-footer">
+                <p>&copy; 2025 Billing Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

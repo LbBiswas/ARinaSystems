@@ -1,0 +1,47 @@
+# Prevent execution of PHP files in uploads
+php_flag engine off
+
+# Prevent access to PHP files
+<Files "*.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.phtml">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.php3">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.php4">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.php5">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Only allow specific file types
+<FilesMatch "\.(jpg|jpeg|png|gif|pdf|doc|docx)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Prevent direct access to uploads directory
+Options -Indexes
+
+# Set proper MIME types
+<IfModule mod_mime.c>
+    AddType application/pdf .pdf
+    AddType application/msword .doc
+    AddType application/vnd.openxmlformats-officedocument.wordprocessingml.document .docx
+    AddType image/jpeg .jpg .jpeg
+    AddType image/png .png
+    AddType image/gif .gif
+</IfModule>
